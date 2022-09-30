@@ -32,7 +32,7 @@ export default function Home(){
         if(event.key=="Enter")
         {
     
-         return   navigate("/MensGrooming")
+         return   Navigate("/MensGrooming")
         }
     }
 
