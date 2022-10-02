@@ -1,19 +1,11 @@
-import {
-    Drawer,
-    DrawerBody,
-    DrawerFooter,
-    DrawerHeader,
-    DrawerOverlay,
-    DrawerContent,
-    DrawerCloseButton,
-  } from '@chakra-ui/react'
-  import {Text,Box,Button,SimpleGrid,List,Image,Input,Select,Heading} from "@chakra-ui/react"
 
-  import { useDisclosure } from '@chakra-ui/react'
+  import {Text,Box,Button,Heading} from "@chakra-ui/react"
+
+ 
   import React from "react"
 import { useState } from "react"
 import { PinInput, PinInputField } from '@chakra-ui/react'
-import { useNavigate,Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 
 export default function LoginVerification() {
@@ -22,7 +14,7 @@ export default function LoginVerification() {
     // alert("hi")
     const val = Math.floor(1000 + Math.random() * 9000);
    // console.log(val,"otp")
-    if(popup==true){
+    if(popup===true){
         alert(`OTP is ${val}`)
         setPopup(false)
     }

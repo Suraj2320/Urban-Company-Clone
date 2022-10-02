@@ -1,13 +1,13 @@
-// import SimpleImageSlider from "react-simple-image-slider";
-import {Box,SimpleGrid,Heading,Select,Input,Image,Text,Option} from "@chakra-ui/react"
+
+import {Box,SimpleGrid,Heading,Select,Input,Image,Text} from "@chakra-ui/react"
 import {
     Breadcrumb,
     BreadcrumbItem,
     BreadcrumbLink,
-    BreadcrumbSeparator,
+ 
   } from '@chakra-ui/react'
 import { useNavigate } from "react-router-dom"
-import { Navigate } from "react-router-dom";
+// import { Navigate } from "react-router-dom";
 import { useState } from "react";
 
 const images = [
@@ -23,7 +23,7 @@ export default function Home(){
     const navigate=useNavigate()
     const [state,setState]=useState(images)
     const handlePage=()=>{
-        Navigate("/MensGrooming")
+        navigate("/MensGrooming")
     }
 
       console.log("state",state)
@@ -32,35 +32,27 @@ export default function Home(){
         if(event.key=="Enter")
         {
     
-         return   Navigate("/MensGrooming")
+         return   navigate("/MensGrooming")
         }
     }
 
     return(
         <SimpleGrid columns={[1, 1, 1]}>
-        <Box backgroundPosition="50%" backgroundSize="cover" backgroundRepeat="no-repeat" h="557px" bgImage={"https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1615375782838-f890f8.jpeg"}>
-            <Box textAlign="center" w="50%" m="auto" mt="140px" color="white">
+        <Box backgroundPosition="50%" backgroundSize="cover" backgroundRepeat="no-repeat" h="552px" bgImage={"https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1615375782838-f890f8.jpeg"}>
+            <Box textAlign="center" w="50%" m="auto" mt="190px" color="white">
             <Breadcrumb  textAlign="center">
                     <BreadcrumbItem>
-                        <BreadcrumbLink href='#'>Home / Mumbai</BreadcrumbLink>
+                        <BreadcrumbLink href='#'>Home</BreadcrumbLink>
                     </BreadcrumbItem>
 
-                    {/* <BreadcrumbItem>
+                    <BreadcrumbItem>
                         <BreadcrumbLink href='#'>Agra</BreadcrumbLink>
-                        
-                    </BreadcrumbItem>        */}
+                    </BreadcrumbItem>       
              </Breadcrumb>
              <Heading fontSize="48px" >Home services, on demand</Heading>
                 <br />
                 <Box  color="black" display="flex" gap="2rem">
-                    {/* <Select bg="white" w="25%" placeholder="Select" >
-                        <Option></Option>
-                    </Select> */}
-                    <Select placeholder='Select option'  bg="white" w="25%" >
-                            <option value='option1'>Mumbai</option>
-                            <option value='option2'>Delhi</option>
-                            <option value='option3'>Nashik</option>
-                    </Select>
+                    <Select bg="white" w="25%" placeholder="Agra" ></Select>
                     <Input bg="white"  placeholder="Search for services" onKeyPress={handleKeyPress}/>
                 </Box>
                 <br />
@@ -156,11 +148,7 @@ export default function Home(){
       />
     </div> */}
         {/* work here */}
-
-        <Box sx={{ height:"20px",backgroundColor:"#e0e0e0",marginTop:"100px"}}></Box>
-
-
-        <Box display="flex" gap="4rem" mt="80px" >
+        <Box display="flex" gap="4rem" mt="40px" >
             {state?.map((item)=>{
                 return <Box  key={item.id}>
                     <Image src={item.url} />
@@ -198,110 +186,6 @@ export default function Home(){
                 </Box>
             </Box>
 
-
-
-            <Box sx={{ height:"20px",backgroundColor:"#e0e0e0",marginTop:"110px"}}></Box>
-
-
-            <Box sx={{width:"86%",margin:"auto"}}>
-                {/* <Heading sx={{marginTop:"110px",display:"flex",justifyContent:"center"}}>Cleaning & Pest Control</Heading> */}
-                <Box textAlign="center" mt="100px" mb="100px">
-
-               
-
-                                    <Heading>Cleaning & Pest Control</Heading>
-</Box>
-               
-                <SimpleGrid className="grid" columns={4} spacingX='40px'>
-                    
-                    <Box>
-                    <Image borderRadius="5%" w="466px" h="200px"  src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1625159882387-9585c7.jpeg" />
-                    <Text sx={{fontSize:"19px",paddingTop:"27px",fontFamily:"bold",cursor:"pointer",display:"flex",justifyContent:"center"}}>Bathroom and Kitchen Cleaning</Text>
-                  
-                    </Box>
-                    <Box>
-                    <Image className="sur" borderRadius={"12px"}  src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/luminosity/1632396793425-1a5418.jpeg" />
-                    <Text sx={{fontSize:"19px",paddingTop:"27px",fontFamily:"bold",cursor:"pointer",display:"flex",justifyContent:"center"}}>Full Home Cleaning</Text>
-                    </Box>
-                    <Box>
-                    <Image className="sur" borderRadius={"12px"}  src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1630420912606-2fffa6.jpeg" />
-                    <Text sx={{fontSize:"19px",paddingTop:"27px",fontFamily:"bold",cursor:"pointer",display:"flex",justifyContent:"center"}}>Sofa & Carpet Cleaning</Text>
-                 
-                    </Box>
-                    <Box>
-                        <Image className="sur" h="200px" borderRadius={"12px"} src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/luminosity/1631159612066-53b210.jpeg" />
-                        <Text sx={{fontSize:"19px" ,marginTop:"4px",paddingTop:"27px",fontFamily:"bold",cursor:"pointer",display:"flex",justifyContent:"center"}}>Cockroach , Ant & Pest Control</Text>
-                    </Box>
-                </SimpleGrid>
-            </Box>
-
-
-
-
-
-            <Box sx={{ height:"20px",backgroundColor:"#e0e0e0",marginTop:"110px"}}></Box>
-            <Box sx={{width:"86%",margin:"auto"}}>
-                <Heading sx={{marginTop:"110px",display:"flex",justifyContent:"center"}}>UC Luxury Experience</Heading>
-                <Text sx={{marginTop:"7px",fontSize:"22px",color:"grey",fontFamily:"bold",display:"flex",justifyContent:"center"}}>Top Proffessionals | Best Brands | Premium Experience</Text>
-                <SimpleGrid className="grid" columns={4} spacingX='40px'>
-                    
-                    <Box>
-                    <Image className="sur" borderRadius={"12px"} src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1631883165804-025664.png" />
-                    <Text sx={{fontSize:"19px",paddingTop:"27px",fontFamily:"bold",cursor:"pointer",display:"flex",justifyContent:"center"}}>Salon Live</Text>
-                  
-                    </Box>
-                    <Box>
-                    <Image className="sur" borderRadius={"12px"}  src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1631883164057-dd5910.png" />
-                    <Text sx={{fontSize:"19px",paddingTop:"27px",fontFamily:"bold",cursor:"pointer",display:"flex",justifyContent:"center"}}>Salon For Man Royale</Text>
-                    </Box>
-                    <Box>
-                    <Image className="sur" borderRadius={"12px"}  src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1631883164904-165c1e.png" />
-                    <Text sx={{fontSize:"19px",paddingTop:"27px",fontFamily:"bold",cursor:"pointer",display:"flex",justifyContent:"center"}}>Spa Luxe</Text>
-                    
-                    </Box>
-                    <Box>
-                        <Image className="sur" borderRadius={"12px"} src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1631883164502-08f9f6.png" />
-                        <Text sx={{fontSize:"19px",paddingTop:"27px",fontFamily:"bold",cursor:"pointer",display:"flex",justifyContent:"center"}}>Massage Therapy For Men Royale</Text>
-                    </Box>
-                </SimpleGrid>
-            </Box>
-
-
-
-
-            <Box sx={{ height:"20px",backgroundColor:"#e0e0e0",marginTop:"110px"}}></Box>
-
-            <Box sx={{width:"86%",margin:"auto",paddingBottom:"5rem"}}>
-                <Heading sx={{marginTop:"60px",display:"flex",justifyContent:"center",}}>Home Repairs</Heading>
-              
-                <SimpleGrid className="grid" columns={4} spacingX='40px'sx={{ marginTop:"110px"}}>
-                    
-                    <Box>
-                    <Image className="sur"  height={"158px"} width={"300px"} borderRadius={"12px"} src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/categories/home_screen/carpenter.jpg" />
-                    <Text sx={{fontSize:"19px",paddingTop:"27px",fontFamily:"bold",cursor:"pointer",display:"flex",justifyContent:"center"}}>Furniture Making,Upholstery Purifier</Text>
-                  
-                    </Box>
-                    <Box>
-                    <Image className="sur" height={"158px"} borderRadius={"12px"}  src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/categories/category_v2/category_a91b73d0.jpeg" />
-                    <Text sx={{fontSize:"19px",paddingTop:"27px",fontFamily:"bold",cursor:"pointer",display:"flex",justifyContent:"center"}}> Electricians</Text>
-                    </Box>
-                    <Box>
-                    <Image className="sur" height={"158px"} width={"300px"} borderRadius={"12px"}  src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/categories/home_screen/plumber.jpg" />
-                    <Text sx={{fontSize:"19px",paddingTop:"27px",fontFamily:"bold",cursor:"pointer",display:"flex",justifyContent:"center"}}> Plumbers</Text>
-                    
-                    </Box>
-                    <Box>
-                        <Image className="sur"  height={"158px"} width={"300px"} borderRadius={"12px"} src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/categories/bigpictures/carpenter.jpg" />
-                        <Text sx={{fontSize:"19px",paddingTop:"27px",fontFamily:"bold",cursor:"pointer",display:"flex",justifyContent:"center"}}>Carpentrs</Text>
-                    </Box>
-                </SimpleGrid>
-            </Box>
-
-
-
-
-
-            <Box sx={{ height:"20px",backgroundColor:"lightgray",marginTop:"10px"}}></Box>
 
             <Box textAlign="center" mt="100px" mb="100px">
 

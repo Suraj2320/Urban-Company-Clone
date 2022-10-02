@@ -6,7 +6,7 @@ import {Link} from "react-router-dom"
 import AddToCart from "./AddToCart"
 import CartContext from "../Context/CartContext"
 import { useContext } from "react"
-import ReactPlayer from "react-player"
+import ReactPlayer from 'react-player'
 
 export default function MensGrooming(){
 
@@ -29,9 +29,9 @@ export default function MensGrooming(){
     },[])
     //    console.log("datamens",data)
 
-    // const handleStore=(item)=>{
-    //     setStore([...store,item])
-    // }
+    const handleStore=(item)=>{
+        setStore([...store,item])
+    }
 
     const handleAddtoCart=()=>{
           

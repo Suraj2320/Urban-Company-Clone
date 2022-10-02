@@ -1,7 +1,7 @@
 
  import {Link} from "react-router-dom"
  import "../Style/Footer.css"
- import {Box,Button,SimpleGrid,List,Image,Text,Heading,Select,Input,Stack,InputGroup,InputLeftAddon} from "@chakra-ui/react"
+ import {Box,Image,Text} from "@chakra-ui/react"
 
 export default function Footer(){
     let style={marginBottom:"25px", display:"flex" ,

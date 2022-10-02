@@ -1,15 +1,14 @@
-// import logo from './logo.svg';
-import './App.css';
-import Navbar from './Common/Navbar';
-import Allroutes from './Routes/AllRoutes';
-// import Footer from "./Common/Footer"
-
+import logo from './logo.svg';
+// import './App.css';
+import Allroutes from "./Routes/AllRoutes"
+import Navbar from "./Common/Navbar"
+import Footer from "./Common/Footer"
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+    <Navbar/>
       <Allroutes/>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }
