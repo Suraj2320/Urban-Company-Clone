@@ -7,17 +7,6 @@ The platform helps customers book professional home services such as beauty serv
 
 Cloning of Urban Company website. We are a team of 3. We have tried to create a clone of a well known on demand service provider call Urban Company. For more details <a href="https://urban-company-clone.netlify.app/">Click here</a>
 
-# Home Page
-
-<a href="#"><img width="100%" height="auto" src="../public/Images/Home_View.png" height="175px"/></a>
-
-# Service Page
-
-<a href="#"><img width="100%" height="auto" src="./public/Images/AC_Services_page.png" height="175px"/></a>
-
-# Service Booking Page
-
-<a href="#"><img width="100%" height="auto" src="./public/Images/Service_booking.png" height="175px"/></a>
 
 # About the website.
 Urban Company is an Indian gig marketplace that offers home installation, maintenance and repair services, and home beauty and wellness services. We have focused on the AC services section.
