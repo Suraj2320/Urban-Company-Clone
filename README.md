@@ -3,9 +3,7 @@
 Urban Company is the largest home service platform in Asia.
 The platform helps customers book professional home services such as beauty services and massage therapy for both women and men, cleaning, painting, plumbing, carpentry, appliance repair, and many more.
 
-# Clone of Urban Company Clone
 
-Cloning of Urban Company website. We are a team of 3. We have tried to create a clone of a well known on demand service provider call Urban Company. For more details <a href="https://urban-company-clone.netlify.app/">Click here</a>
 
 
 # About the website.
