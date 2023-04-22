@@ -9,6 +9,9 @@ const getProductSuccess = (payload) => {
   return { type: "PRODUCT_SUCCESS", payload: payload };
 };
 
+
+
+
 const getProductData = (params) => (dispatch) => {
   dispatch(getProductReq());
 

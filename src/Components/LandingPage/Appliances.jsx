@@ -8,6 +8,7 @@ const Appliances = ()=>{
             <Flex id="appliance_image">
                 <Link className="link" href="https://www.urbancompany.com/cart?city=city_delhi_v2&category=geyser_reapir">
                     <Box>
+                        
                         <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/categories/category_v2/category_c0667020.png" alt="" />
                         <Text>Geyser</Text>
                         <p>Starts at ₹249</p>

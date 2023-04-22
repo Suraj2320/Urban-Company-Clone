@@ -8,6 +8,7 @@ function Services() {
       service: "Salon For Women",
       route: "/products/salon_for_women",
     },
+    
     {
       logo: "https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/supply/customer-app-supply/1635331606894-7b633f.png",
       service: "Hair, Skin & Nails",

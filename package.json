@@ -2,6 +2,7 @@
   "name": "quack-spoon-1626",
   "version": "0.1.0",
   "private": true,
+  
   "dependencies": {
     "@chakra-ui/icons": "^2.0.13",
     "@chakra-ui/modal": "^2.2.5",

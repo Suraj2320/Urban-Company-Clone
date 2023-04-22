@@ -10,6 +10,7 @@ export const CategoryItems = ({id, img, para }) => {
 
         </a>
       </Box>
+      
       <Box lineHeight={1}>
         <p color="black" >{para}</p>
 
